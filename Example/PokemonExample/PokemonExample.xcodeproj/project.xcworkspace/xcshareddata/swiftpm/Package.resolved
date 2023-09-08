@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "pokemon",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PrinceGosplana/Pokemon",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5fe53ea07667e0cbc1b3c7d393badaf50ba09114"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream.git",
+      "state" : {
+        "revision" : "ac6c0fc9da221873e01bd1a0d4818498a71eef33",
+        "version" : "4.0.6"
+      }
+    }
+  ],
+  "version" : 2
+}

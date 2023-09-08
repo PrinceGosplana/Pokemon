@@ -11,6 +11,7 @@
 		8A506CC52AAAF3F700034BB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A506CC42AAAF3F700034BB2 /* ContentView.swift */; };
 		8A506CC72AAAF3FA00034BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A506CC62AAAF3FA00034BB2 /* Assets.xcassets */; };
 		8A506CCA2AAAF3FA00034BB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A506CC92AAAF3FA00034BB2 /* Preview Assets.xcassets */; };
+		8A506CD22AAAF4F400034BB2 /* Pokemon in Frameworks */ = {isa = PBXBuildFile; productRef = 8A506CD12AAAF4F400034BB2 /* Pokemon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A506CD22AAAF4F400034BB2 /* Pokemon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = PokemonExample;
+			packageProductDependencies = (
+				8A506CD12AAAF4F400034BB2 /* Pokemon */,
+			);
 			productName = PokemonExample;
 			productReference = 8A506CBF2AAAF3F700034BB2 /* PokemonExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 8A506CB62AAAF3F700034BB2;
+			packageReferences = (
+				8A506CD02AAAF4F400034BB2 /* XCRemoteSwiftPackageReference "Pokemon" */,
+			);
 			productRefGroup = 8A506CC02AAAF3F700034BB2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +345,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A506CD02AAAF4F400034BB2 /* XCRemoteSwiftPackageReference "Pokemon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PrinceGosplana/Pokemon";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A506CD12AAAF4F400034BB2 /* Pokemon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A506CD02AAAF4F400034BB2 /* XCRemoteSwiftPackageReference "Pokemon" */;
+			productName = Pokemon;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8A506CB72AAAF3F700034BB2 /* Project object */;
 }
