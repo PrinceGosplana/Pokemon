@@ -21,7 +21,10 @@ let package = Package(
         .target(
             name: "Pokemon",
             dependencies: ["Starscream"],
-        path: "Sources"),
+        path: "Sources",
+        resources: [
+            .process("Resource/Media.assets")]
+        ),
         .testTarget(
             name: "PokemonTests",
             dependencies: ["Pokemon"]),
